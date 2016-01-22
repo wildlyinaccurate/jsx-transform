@@ -1,4 +1,4 @@
-# jsx-transform [![Build Status](http://img.shields.io/travis/alexmingoia/jsx-transform.svg?style=flat)](http://travis-ci.org/alexmingoia/jsx-transform) [![NPM version](http://img.shields.io/npm/v/jsx-transform.svg?style=flat)](https://npmjs.org/package/jsx-transform) [![Dependency Status](http://img.shields.io/david/alexmingoia/jsx-transform.svg?style=flat)](http://david-dm.org/alexmingoia/jsx-transform)
+# jsx-transform [![Build Status](http://img.shields.io/travis/wildlyinaccurate/jsx-transform.svg?style=flat)](http://travis-ci.org/wildlyinaccurate/jsx-transform) [![NPM version](http://img.shields.io/npm/v/jsx-transform.svg?style=flat)](https://npmjs.org/package/jsx-transform) [![Dependency Status](http://img.shields.io/david/wildlyinaccurate/jsx-transform.svg?style=flat)](http://david-dm.org/wildlyinaccurate/jsx-transform)
 
 > JSX transpiler. Desugar JSX into JavaScript.
 
@@ -41,7 +41,7 @@ For linting files containing JSX see
 ### jsx-transform~fromString(str, [options]) ⇒ <code>String</code>
 Desugar JSX and return transformed string.
 
-**Kind**: inner method of <code>[jsx-transform](#module_jsx-transform)</code>  
+**Kind**: inner method of <code>[jsx-transform](#module_jsx-transform)</code>
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -54,7 +54,7 @@ Desugar JSX and return transformed string.
 | [options.unknownTagsAsString] | <code>Boolean</code> | Pass unknown tags as string to `options.factory` (default: false). |
 | [options.arrayChildren] | <code>Boolean</code> | Pass children as array instead of arguments (default: true). |
 
-**Example**  
+**Example**
 ```javascript
 var jsx = require('jsx-transform');
 
@@ -65,19 +65,19 @@ jsx.fromString('<h1>Hello World</h1>', {
 ```
 <a name="module_jsx-transform..fromFile"></a>
 ### jsx-transform~fromFile(path, [options]) ⇒ <code>String</code>
-**Kind**: inner method of <code>[jsx-transform](#module_jsx-transform)</code>  
+**Kind**: inner method of <code>[jsx-transform](#module_jsx-transform)</code>
 
 | Param | Type |
 | --- | --- |
-| path | <code>String</code> | 
-| [options] | <code>Object</code> | 
+| path | <code>String</code> |
+| [options] | <code>Object</code> |
 
 <a name="module_jsx-transform..browserifyTransform"></a>
 ### jsx-transform~browserifyTransform([filename], [options]) ⇒ <code>function</code>
 Make a browserify transform.
 
-**Kind**: inner method of <code>[jsx-transform](#module_jsx-transform)</code>  
-**Returns**: <code>function</code> - browserify transform  
+**Kind**: inner method of <code>[jsx-transform](#module_jsx-transform)</code>
+**Returns**: <code>function</code> - browserify transform
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -85,7 +85,7 @@ Make a browserify transform.
 | [options] | <code>Object</code> |  |
 | [options.extensions] | <code>String</code> | Array of file extensions to run browserify transform on (default: `['.js', '.jsx', '.es', '.es6']`). |
 
-**Example**  
+**Example**
 ```javascript
 var browserify = require('browserify');
 var jsxify = require('jsx-transform').browserifyTransform;
